@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  * {
+    padding: 0;
+    background: #2b2a2a;
+    color: rgb(221, 221, 221);
+  }
+  label {
+    padding: 5px;
+    margin-bottom: 7px;
+    font-size: 2rem;
+  }
+  input {
+    border: rgb(221, 221, 221) solid 2px;
+    padding: 3px;
+  }
+  .input-btn {
+    border: rgb(221, 221, 221) solid 2px;
+    padding: 5px;
+    margin: 20px 10px;
+    font-size:20px
+  }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<div>
+    <h1>Ajouter un magasin:</h1>
+    <div style="padding:0px 20px">
+        <div style="padding:2px">
+            <label for="addresse">Addresse :</label>
+            <input type="text" id="addresse">
+        </div>
+        <div style="padding:2px">
+            <label for="type">Type :</label>
+            <input type="number" id="type">
+        </div>
+        <input class="input-btn" type="button" id="ajouterMagasin" value="Ajouter un magasin">
+    </div>
+</div>
+<div>
+    <h1>Ajouter un produit à un magasin:</h1>
+    <div style="padding:0px 20px">
+        <div style="padding:2px">
+            <label for="idProdMagasin">ID Magasin :</label>
+            <input type="number" id="idProdMagasin">
+        </div>
+        <div style="padding:2px">
+            <label for="titre">Titre :</label>
+            <input type="text" id="titre">
+        </div>
+        <div style="padding:2px">
+            <label for="ptype">Categorie :</label>
+            <input type="number" id="ptype">
+        </div>
+        <div style="padding:2px">
+            <label for="prix">Prix :</label>
+            <input type="number" id="prix">
+        </div>
+        <input class="input-btn" type="button" id="ajouterProduit" value="Ajouter un produit">
+    </div>
+</div>
+<div>
+    <h1>Liste de magasins:</h1>
+    <input class="input-btn" type="button" id="listerMagasins" value="Lister les magasins">
+    <ul id="listeMagasins">
+    </ul>
+</div>
+<div>
+    <h1>Liste les produits d'un magasin:</h1>
+    <div style="padding:2px">
+        <label for="idMagasin">ID Magasin :</label>
+        <input type="number" id="idMagasin">
+    </div>
+    <input class="input-btn" type="button" id="listerProduits" value="Lister les produits">
+    <ul id="listeProduits">
+    </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
